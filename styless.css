@@ -15,11 +15,11 @@
 
 .desplegable1 {
     list-style-type: none;
-    
+    text-decoration: none;
 }
 
 .img1 {
     width: 150px;
     height: 150px;
-    border-color: blue;
+    
 }
