@@ -1,7 +1,7 @@
 .navegacion {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: flex-start;
+    
     border: 5px solid red;
     border-radius: 8px;
 }
@@ -11,15 +11,28 @@
     justify-content: space-around;
     gap: 55px;
     list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+.menuPrincipal li {
+    margin-right: 30px;
+}
+
+.menuPrincipal a {
+    text-decoration: none;
 }
 
 .desplegable1 {
     list-style-type: none;
-    text-decoration: none;
+    
 }
 
 .img1 {
     width: 150px;
     height: 150px;
-    
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px; 
+
 }
