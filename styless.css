@@ -1,0 +1,25 @@
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border: 5px solid red;
+    border-radius: 8px;
+}
+
+.menuPrincipal {
+    display: flex;
+    justify-content: space-around;
+    gap: 55px;
+    list-style-type: none;
+}
+
+.desplegable1 {
+    list-style-type: none;
+    
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    border-color: blue;
+}
