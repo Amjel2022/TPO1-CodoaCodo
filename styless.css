@@ -1,3 +1,5 @@
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -5,6 +7,15 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+/* PALETA DE COLORES */
+:root {
+    --turquesa: #11Ace2;
+	--celeste: #46d0f4;
+	--negro: #131313;
+	--blanco: #fefefe;	
+	--gris: #333333;
+} 
 
 /* ---------------------------------- */
 /* ENCABEZADO Y MENU DE NAVEGACION  */
@@ -19,7 +30,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px 10px 0 0;
-	background: #CE7D35;
+	background: var(--blanco);
     width: 1100px;
     margin: 20px auto 0 auto;
 	
@@ -28,18 +39,19 @@ header{
 .img1 {
     width: 120px;
     height: 100px;
-	background-color: #CE7D35;
+	background-color: var(--blanco);
 	padding-right: 15px;
 }
 
 .navegacion{
 	display: flex;
     justify-content: space-evenly;
+	align-items: center;
     width: 1100px;
+	height: 70px;
 	margin: 30px auto;
-	background: rgb(221, 204, 221);
+	background: var(--negro);
     border-radius: 0 0 10px 10px;
-	
 	margin-top: 0;
 }
 
@@ -55,19 +67,19 @@ header{
 .menu > li > a{
 	display: block;
 	padding: 15px 20px;
-	color: #353535;
-	font-family: 'Open sans';
+	color: var(--blanco);
+	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 }
 
 .menu li a:hover{
-	color: #CE7D35;
+	color: var(--turquesa);
 	transition: all .3s;
 }
 /* submenu1 haciendo el desplegable */
 .submenu1{
 	position: absolute;
-	background: #333333;
+	background: var(--gris);
 	width: 120%;
 	visibility: hidden;
 	opacity: 0;
@@ -77,14 +89,19 @@ header{
 .submenu1 li a{
 	display: block;
 	padding: 15px;
-	color: #fff;
-	font-family: 'Open sans';
+	color: var(--blanco);
+	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 }
 
 .menu li:hover .submenu1{
 	visibility: visible;
 	opacity: 1;
+}
+
+.buscador {
+	width: 200px;
+	padding: 8px;
 }
 
 /* ------------------------------------ */
@@ -100,3 +117,4 @@ header{
 	width: 500px;
 	height: 300px;
 }
+

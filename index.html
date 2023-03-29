@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ventas</title>
     <link rel="stylesheet" href="styless.css">
+    <!-- Codigo de la Fuente: Oswalt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -61,9 +66,32 @@
     </header>
 
     <main>
-        <h1>
+        
+        <!-- INICIO DE CARDS!!! -->
 
-        </h1>
+        <div className="card1">
+                
+            <div className="card-imagen">
+                <img src={ imagenTP } alt="Imagen de la Tabla Periódica" className="img-card"/>
+            </div>
+
+            <div className="card-contenido">
+                <div className="card-titulo">
+                    <h3>introducción</h3>
+                </div>
+            
+                <div className="card-parrafo">
+                    <p>
+                    La Tabla Periódica es una parte fundamental en el estudio de la química. Conocer y saber usar una tabla, es un conocimiento básico que todo estudiante de química debería conocer.
+                    </p>
+                </div>
+
+                <Link to="/introduccion" className="linkcard">Saber más</Link>  
+                
+            </div>
+            
+        </div>
+
     </main>
 
     <footer>
