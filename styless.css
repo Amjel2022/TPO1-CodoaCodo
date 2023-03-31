@@ -118,3 +118,82 @@ header{
 	height: 300px;
 }
 
+/* ----------------------------------- */
+/* CARDS DE LA HOME */
+/* ----------------------------------- */
+
+main {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    padding-top: 40px;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 1100px;
+    
+    
+}
+    
+.card1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    border: black solid 4px;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--blanco);
+    
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card1:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.imgCard1 {
+    width: 350px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    padding: 0px 10px 0px 0px;
+
+}
+
+.card2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    border: #848775 solid 4px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
+}
+
+.card2:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+/* ------------------------------------- */
+/* FOOTER */
+/* ------------------------------------- */
+
+.footer {
+    width: 1100px;
+    border-width: red solid 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+}

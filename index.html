@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ventas</title>
+    <!-- Link del CSS -->
     <link rel="stylesheet" href="styless.css">
     <!-- Codigo de la Fuente: Oswalt -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,34 +69,81 @@
     <main>
         
         <!-- INICIO DE CARDS!!! -->
+        <div class="cardContainer">
 
-        <div className="card1">
-                
-            <div className="card-imagen">
-                <img src={ imagenTP } alt="Imagen de la Tabla Periódica" className="img-card"/>
+            <div className="card1">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Software</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
+            </div>
+        
+            <div className="card2">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Hardware</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
+            </div>
+        
+            <div className="card3">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Hardware</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
+            </div>
+        
+            <div className="card4">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Hardware</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
             </div>
 
-            <div className="card-contenido">
-                <div className="card-titulo">
-                    <h3>introducción</h3>
-                </div>
-            
-                <div className="card-parrafo">
-                    <p>
-                    La Tabla Periódica es una parte fundamental en el estudio de la química. Conocer y saber usar una tabla, es un conocimiento básico que todo estudiante de química debería conocer.
-                    </p>
-                </div>
-
-                <Link to="/introduccion" className="linkcard">Saber más</Link>  
-                
+            <div className="card5">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Hardware</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
             </div>
-            
+
+            <div className="card6">   
+                <img class="imgCard1" src="./imagenes/imgsoftware.png" alt="Software">
+                <h3>Hardware</h3>  
+                <p>
+                Todo lo que necesitas para que tu compu tenga los últimos sistemas operativos del mundo IT. 
+                </p>           
+                <input type="submit" value="Comprar" class="botonComprar">    
+            </div>
+
+
         </div>
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="copyright">
+            <p>©2022 Tabla Periódica <i>(para principiantes)</i></p>
+            <p>Todos los derechos reservados</p>
+        </div>
 
+        <address class="direccionBSAS">
+            Buenos Aires <br>
+            Av. Curapaligüe 377 <br>
+            Capital Federal <br>
+            Tel/Fax: +54 11 2324-9568
+        </address>
+
+        <p class="firma">Por <a href="#">Codos Design</a> </p>
     </footer>
 
 </body>
