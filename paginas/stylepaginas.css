@@ -100,3 +100,50 @@ header{
 	width: 200px;
 	padding: 8px;
 }
+
+/* ---------------------------------- */
+/* CARDS PRODUCTOS/MONITORES  */
+/* ---------------------------------- */
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-template-rows: 1fr;
+    grid-gap:1em;
+    justify-content: center;
+
+}
+.producto{
+    max-width: 280px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.producto:hover{
+    box-shadow:  0 0 1.5em rgba(0, 0, 0, 0.2);
+}
+.producto > img{
+    width: 100%;
+    object-fit: cover;
+}
+.info{
+    border-top: 1px solid rgba(230,230,230);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+}
+.info * + *{
+    margin-bottom: 1em;
+}
+.precio{
+    background-color: var(--turquesa);
+    color: rgba(255,255,255);
+    font-weight: 600;
+    max-width: max-content;
+    padding: 0 0.2em;
+    border-radius: 3px;
+}
