@@ -5,8 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitores</title>
+    <link rel="stylesheet" href="./stylepaginas.css">
+    <!-- Codigo de la Fuente: Oswalt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Estas en monitores</h1>
+    <header>
+        <!-- Imagen o logo de la compañía con nombre en h1 -->
+        <div class="encabezado">
+            <a href=""> <img src="../imagenes/compu.jpg" alt="imagen de prueba" class="img1">  </a>
+            <h1>CompuTodo<></h1>
+        </div>
+        
+        <nav class="navegacion">
+            <!-- Menú principal -->
+            <ul class="menu">
+                <li> <a href="##">Home</a> </li>
+                <!-- Enlace a la misma pagina Home con enlace id -->
+                <!-- Menú desplegable 1 -->
+                <li> <a href="##">Categorías</a> 
+                    <ul class="submenu1">
+                        <li> <a href="./paginas/software.html">Software</a> </li>
+                        <li> <a href="./paginas/hardware.html">Hardware</a> </li>
+                    </ul>
+                </li>
+                
+                <!-- Menú desplegable 2 -->
+                <li> <a href="##">Productos</a> 
+                    <ul class="submenu1">
+                        <li> <a href="./paginas/monitores.html">Monitores</a> </li>
+                        <li> <a href="./paginas/gabinetes.html">Gabinetes</a> </li>
+                        <li> <a href="./paginas/impresoras.html">Impresoras</a> </li>
+                        <li> <a href="./paginas/perifericos.html">Perifericos</a> </li>
+                        <!-- Revisar despues....  -->
+                        <li> <a href="./paginas/cables.html">Cables</a> </li>
+                        <!-- Revisar por si queremos agregar algo -->
+                    </ul>
+                </li>
+                <!-- Fin menú desplegable -->
+                <li> <a href="./paginas/ofertas.html">Ofertas</a> </li>
+                <li> <a href="./paginas/contacto.html">Contacto</a> </li>
+                <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
+                <!-- Revisar el menu para ver si se agrega algo -->
+               
+                <!-- Botón para buscar y buscador  -->
+                <input class="buscador" type="text" placeholder="¿Qué deseas buscar?">
+                <input type="submit" value="Buscar">
+                
+            </ul>
+        </nav>
+    </header>
+    <main id="productos">
+        <div class="producto">
+            <img src="../imagenes/monitor.webp" alt="monitor samsung">
+            <div class="info">
+                <span class="precio">$48.379</span>
+                <span class="envio">Envío gratis</span>
+                <span class="descripcion">Monitor Gamer Fullhd Samsung</span>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="../imagenes/monitor.webp" alt="monitor samsung">
+            <div class="info">
+                <span class="precio">$48.379</span>
+                <span class="envio">Envío gratis</span>
+                <span class="descripcion">Monitor Gamer Fullhd Samsung</span>
+            </div>
+        </div>
+        <div class="producto">
+            <img src="../imagenes/monitor.webp" alt="monitor samsung">
+            <div class="info">
+                <span class="precio">$48.379</span>
+                <span class="envio">Envío gratis</span>
+                <span class="descripcion">Monitor Gamer Fullhd Samsung</span>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
