@@ -102,16 +102,24 @@ header{
 .buscador {
 	width: 200px;
 	padding: 8px;
+    margin-left: 35px;
+    align-items: center;
 }
 
 .boton1 {
+    align-items: center;
     border: none;
     background: var(--turquesa);
-    padding: 8px;
+    padding: 6px;
     margin-left: 15px;
     border-radius: 5px;
     color: var(--blanco);
     font-size: medium;
+}
+
+.boton1:hover {
+    
+    cursor: pointer;
     font-weight: bold;
 }
 
@@ -137,7 +145,7 @@ main {
     display: grid;
     place-items: center;
     justify-self: center;
-    padding-top: 40px;
+    padding: 40px 5px 40px 5px;
 }
 
 .cardContainer {
@@ -201,10 +209,13 @@ main {
 /* ------------------------------------- */
 
 .footer {
+    display: grid;
+    margin: auto;
     width: 1100px;
     border-width: red solid 4px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0px 40px 0px;
+    padding: 30px 0px 30px 0px;
+    background-color: var(--celeste);
 }
