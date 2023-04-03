@@ -104,6 +104,17 @@ header{
 	padding: 8px;
 }
 
+.boton1 {
+    border: none;
+    background: var(--turquesa);
+    padding: 8px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: var(--blanco);
+    font-size: medium;
+    font-weight: bold;
+}
+
 /* ------------------------------------ */
 /* ----------- SLIDER ----------------- */
 /* ------------------------------------ */
