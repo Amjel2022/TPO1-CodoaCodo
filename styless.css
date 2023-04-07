@@ -46,7 +46,6 @@ header{
     width: 120px;
 	padding: 0 15px 0 15px;
     
-    
 }
 
 .navegacion{
@@ -217,7 +216,7 @@ main {
 .footer {
     width: 1100px;
     color: var(--blanco);
-    padding: 10px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
     position: relative;
     background-color: var(--negro);
     border-radius: 10px;
@@ -231,21 +230,20 @@ main {
     display: flex;
     flex-direction: row;
     min-height: 250px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: stretch;
     align-items: stretch;
     margin-top: 10px;  
 }
 
 .redes {
-    flex-basis: 250px;
     flex-direction: column;
 }
 
 .redes a {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 10px;
+    margin-top: 12px;
     align-items: self-start;
     text-decoration: none;
     align-items: center;
@@ -263,26 +261,26 @@ main {
     justify-content: center;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
 }
 
-.navegacion {
+.footerNavegacion {
     display: flex;
-    flex-basis: 300px;
+    flex-basis: content;
     flex-direction: column;
 }
 
-.navegacion h4 {
+.footerNavegacion h4 {
     display: flex;
-    padding-top: 65px;
     justify-content: center;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
 }
 
 .footerNavbar {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
     align-items: center;    
     text-decoration: none;
     align-items: center;
@@ -300,6 +298,66 @@ main {
     margin-top: 10px;
     color: var(--blanco);
     font-size: medium;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.footerNavbar a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.logoMarca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+.logoMarca h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+
+.mediosPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediosPago h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+
+.mediosPago a :hover {
+    fill: var(--turquesa);
+    cursor: pointer;
+}
+
+.footerFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerFila a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.footerFila a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
 
