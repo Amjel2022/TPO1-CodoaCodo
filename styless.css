@@ -37,7 +37,7 @@ header{
 }
 
 .img1 {
-    width: 120px;
+    width: 100px;
 	padding: 0 15px 0 15px;
 }
 
@@ -336,11 +336,40 @@ h4 {
     margin-top: 13px;
 }
 
+hr {
+    display: none;
+}
+
 /* ----------------------------------------- */
-/* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS  */
+/* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
 
-@media screen {
+@media(max-width:768px) {
+    
+/* intento de responsive en FOOTER */
+    .footerColumnas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        flex-basis: content;
+    }
+
+    .logoMarca, .redes, .footerNavegacion, .mediosPago {
+        padding-bottom: 45px;
+        flex-basis: auto;
+    }
+
+    .footerFila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
     
 }
 
