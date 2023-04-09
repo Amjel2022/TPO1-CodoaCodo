@@ -3,10 +3,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-    
 }
 
 /* PALETA DE COLORES */
@@ -17,10 +13,9 @@
 	--blanco: #fefefe;	
 	--gris: #333333;
 } 
-/*  */
+/* BODY: IMAGEN DE FONDO DE LA PÁGINA */
 body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2000' height='3000' preserveAspectRatio='none' viewBox='0 0 2000 3000'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1251%26quot%3b)' fill='none'%3e%3crect width='2000' height='3000' x='0' y='0' fill='url(%23SvgjsLinearGradient1252)'%3e%3c/rect%3e%3ccircle r='65.39' cx='589.31' cy='2810.32' fill='url(%23SvgjsLinearGradient1253)'%3e%3c/circle%3e%3ccircle r='51.715' cx='127.89' cy='2990.62' fill='url(%23SvgjsLinearGradient1254)'%3e%3c/circle%3e%3ccircle r='72.915' cx='750.58' cy='2690.25' fill='url(%23SvgjsLinearGradient1255)'%3e%3c/circle%3e%3ccircle r='90.93' cx='1790.1' cy='1803.66' fill='url(%23SvgjsLinearGradient1256)'%3e%3c/circle%3e%3ccircle r='183.935' cx='1295.58' cy='1149.91' fill='url(%23SvgjsLinearGradient1257)'%3e%3c/circle%3e%3ccircle r='145.68' cx='152.48' cy='670.28' fill='url(%23SvgjsLinearGradient1258)'%3e%3c/circle%3e%3ccircle r='168.62' cx='412.68' cy='2352.56' fill='url(%23SvgjsLinearGradient1259)'%3e%3c/circle%3e%3ccircle r='138.805' cx='975.43' cy='2502.03' fill='url(%23SvgjsLinearGradient1260)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1251'%3e%3crect width='2000' height='3000' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='-12.5%25' y1='8.33%25' x2='112.5%25' y2='91.67%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1252'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(124%2c 143%2c 168%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='458.53' y1='2810.32' x2='720.0899999999999' y2='2810.32' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1253'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='24.459999999999994' y1='2990.62' x2='231.32' y2='2990.62' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1254'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='604.75' y1='2690.25' x2='896.4100000000001' y2='2690.25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1255'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1608.2399999999998' y1='1803.6600000000003' x2='1971.9599999999998' y2='1803.6600000000003' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1256'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='927.7099999999999' y1='1149.91' x2='1663.4499999999998' y2='1149.91' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1257'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='-138.88000000000002' y1='670.28' x2='443.84000000000003' y2='670.28' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1258'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='75.44' y1='2352.56' x2='749.9200000000001' y2='2352.56' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1259'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='697.8199999999999' y1='2502.03' x2='1253.04' y2='2502.03' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1260'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-
 }
 
 /* ---------------------------------- */
@@ -39,13 +34,11 @@ header{
 	background-image: linear-gradient(0, #ffffff 0, #ffffff 25%, #edeaf1 50%, #c8cac2 75%, #a9ad98 100%);
     width: 1100px;
     margin: 20px auto 0 auto;
-	
 }
 
 .img1 {
     width: 120px;
 	padding: 0 15px 0 15px;
-    
 }
 
 .navegacion{
@@ -236,6 +229,15 @@ main {
     margin-top: 10px;  
 }
 
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    padding-bottom: 13px;
+}
+
 .redes {
     flex-direction: column;
 }
@@ -243,7 +245,7 @@ main {
 .redes a {
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    margin-bottom: 10px;
     align-items: self-start;
     text-decoration: none;
     align-items: center;
@@ -256,26 +258,9 @@ main {
     cursor: pointer;
 }
 
-.redes h4 {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-}
-
 .footerNavegacion {
     display: flex;
-    flex-basis: content;
     flex-direction: column;
-}
-
-.footerNavegacion h4 {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
 }
 
 .footerNavbar {
@@ -285,17 +270,15 @@ main {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    
 }
 
 .footerNavbar li  {
     list-style-type: none;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .footerNavbar a {
     text-decoration: none;
-    margin-top: 10px;
     color: var(--blanco);
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -313,28 +296,10 @@ main {
     padding: auto;
 }
 
-.logoMarca h4 {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 10px;
-    font-variant: small-caps;
-}
-
 .mediosPago {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.mediosPago h4 {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-bottom: 10px;
-    font-variant: small-caps;
 }
 
 .mediosPago a :hover {
@@ -359,5 +324,25 @@ main {
     color: var(--turquesa);
     cursor: pointer;
 }
+
+.direccionBSAS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direccionBSAS p {
+    margin-top: 13px;
+}
+
+/* ----------------------------------------- */
+/* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS  */
+/* ----------------------------------------- */
+
+@media screen {
+    
+}
+
 
 
