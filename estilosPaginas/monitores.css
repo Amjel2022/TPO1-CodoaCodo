@@ -15,6 +15,7 @@
 /* ENCABEZADO Y MENU DE NAVEGACION  */
 /* ---------------------------------- */
 
+
 header{
 	width: 100%;
 }
@@ -24,24 +25,21 @@ header{
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px 10px 0 0;
-	background: var(--blanco);
-    width: 1100px;
+	background-image: linear-gradient(0, #ffffff 0, #ffffff 25%, #edeaf1 50%, #c8cac2 75%, #a9ad98 100%);
+    width: 85%;
     margin: 20px auto 0 auto;
-	
 }
 
 .img1 {
-    width: 120px;
-    height: 100px;
-	background-color: var(--blanco);
-	padding-right: 15px;
+    width: 100px;
+	padding: 0 15px 0 15px;
 }
 
 .navegacion{
 	display: flex;
     justify-content: space-evenly;
 	align-items: center;
-    width: 1100px;
+    width: 85%;
 	height: 70px;
 	margin: 30px auto;
 	background: var(--negro);
@@ -96,6 +94,25 @@ header{
 .buscador {
 	width: 200px;
 	padding: 8px;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.boton1 {
+    align-items: center;
+    border: none;
+    background: var(--turquesa);
+    padding: 6px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: var(--blanco);
+    font-size: medium;
+}
+
+.boton1:hover {
+    
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /* ---------------------------------- */
@@ -144,3 +161,148 @@ header{
     padding: 0 0.2em;
     border-radius: 3px;
 }
+
+/* -------------------------------------- */
+/* -----------------FOOTER--------------- */
+/* -------------------------------------- */
+
+footer .footer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer {
+    width: 85%;
+    color: var(--blanco);
+    padding: 10px 0px 10px 0px;
+    background-color: var(--negro);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+}
+
+.footerColumnas {
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    margin-top: 10px;  
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    padding-bottom: 13px;
+}
+
+.redes {
+    flex-direction: column;
+}
+
+.redes a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: self-start;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+.redes a :hover {
+    fill: var(--turquesa);
+    cursor: pointer;
+}
+
+.footerNavegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerNavbar li  {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footerNavbar a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footerNavbar a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.logoMarca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+.mediosPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediosPago a :hover {
+    fill: var(--turquesa);
+    cursor: pointer;
+}
+
+.footerFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerFila a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.footerFila a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.direccionBSAS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direccionBSAS p {
+    margin-top: 13px;
+}
+
+/* ----------------------------------------- */
+/* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
+/* ----------------------------------------- */
+
