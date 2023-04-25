@@ -1,5 +1,3 @@
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -133,18 +131,57 @@ h1 {
 /* ----------- SLIDER ----------------- */
 /* ------------------------------------ */
 
-.slider {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	border: red solid 4px;
-	width: 500px;
-	height: 300px;
-}
+
+.sliderContainer {
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sliderImg {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    transition: transform 300ms ease-out;
+  }
+  .sliderImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    border: 2px solid white;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    font-size: 3.5vw;
+    cursor: pointer;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .btn span {
+    color: hsl(281, 100%, 35%);
+  }
+  .btn span:hover {
+    color: hsl(281, 100%, 40%);
+  }
+  .btn.Atras {
+    top: 50%;
+    left: 0;
+  }
+  .btn.Siguiente {
+    top: 50%;
+    right: 0;
+  }
+  
 
 /* ----------------------------------- */
-/* CARDS DE LA HOME */
+/* --------- CARDS DE LA HOME -------- */
 /* ----------------------------------- */
 
 main {
