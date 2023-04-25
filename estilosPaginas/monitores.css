@@ -50,7 +50,6 @@ header{
 .navegacion ul{
 	list-style: none;
 }
-
 .menu > li{
 	position: relative;
 	display: inline-block;
@@ -305,4 +304,3 @@ h4 {
 /* ----------------------------------------- */
 /* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
-
