@@ -7,7 +7,7 @@
 /* PALETA DE COLORES */
 :root {
     --turquesa: #04587c;
-	--celeste: #46d0f4;
+	--celeste: rgb(161, 185, 230);
 	--negro: #131313;
 	--blanco: #fefefe;	
 	--gris: #333333;
@@ -28,7 +28,7 @@ header{
 h1 {
     color: var(--gris);
     font-variant: small-caps;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -45,7 +45,7 @@ h1 {
 
 .img1 {
     width: 100px;
-	padding: 0 15px 0 15px;
+	padding: 0 10px 0 10px;
 }
 
 .navegacion{
@@ -114,15 +114,19 @@ h1 {
 .boton1 {
     align-items: center;
     border: none;
-    background: var(--turquesa);
-    padding: 6px;
+    background: var(--celeste);
+    padding: 7px 15px;
     margin-left: 15px;
     border-radius: 5px;
-    color: var(--blanco);
+    color: var(--negro);
     font-size: medium;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 
 .boton1:hover {
+    background: var(--turquesa);
+    color: var(--blanco);
     cursor: pointer;
     font-weight: bold;
 }
@@ -206,7 +210,7 @@ main {
 .container .card{
     position: relative;
     cursor: pointer;
-    
+    font-family: 'PT Sans', sans-serif; 
 }
 
 .container .card .face{
@@ -250,6 +254,7 @@ main {
     color: #fff;
     text-align: center;
     font-size: 1.5em;
+    font-variant: small-caps;
 }
 
 .container .card .face.face2{
@@ -268,28 +273,39 @@ main {
     transform: translateY(0);
 }
 
+.content {
+    display: grid;
+    place-items: center;
+}
+
 .container .card .face.face2 .content p{
-    margin: 0;
+    margin-bottom: 15px;
     padding: 0;
+    text-align: justify;
 }
 
 .container .card .face.face2 .content a{
-    margin: 15px 0 0;
     display:  inline-block;
+    margin: 0;
     text-decoration: none;
     font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
+    color: var(--negro);
+    background-color: rgb(161, 185, 230);
+    padding: 7px 15px;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    border: 1.5px solid var(--negro);
 }
 
 .container .card .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
+    background: var(--turquesa);
+    color: var(--blanco);
 }
 
 /* ------------------------------------- */
-/* FOOTER */
+/* ------------ FOOTER */ --------------
 /* ------------------------------------- */
 
 footer .footer {
