@@ -161,7 +161,15 @@ header{
     padding: 0 0.2em;
     border-radius: 3px;
 }
-
+.linkProducto{
+    text-decoration: none;
+}
+.envio{
+    color: #131313;
+}
+.descripcion{
+    color: #131313;
+}
 /* -------------------------------------- */
 /* -----------------FOOTER--------------- */
 /* -------------------------------------- */
