@@ -1,0 +1,542 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* PALETA DE COLORES */
+:root {
+    --verde: rgb(41, 191, 41);
+    --turquesa: #11Ace2;
+	--celeste: #46d0f4;
+	--negro: #131313;
+	--blanco: #fefefe;	
+	--gris: #333333;
+} 
+
+/* ---------------------------------- */
+/* ENCABEZADO Y MENU DE NAVEGACION  */
+/* ---------------------------------- */
+
+
+header{
+	width: 100%;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+	background-image: linear-gradient(0, #ffffff 0, #ffffff 25%, #edeaf1 50%, #c8cac2 75%, #a9ad98 100%);
+    width: 85%;
+    margin: 20px auto 0 auto;
+}
+
+.img1 {
+    width: 100px;
+	padding: 0 15px 0 15px;
+}
+
+.navegacion{
+	display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+    width: 85%;
+	height: 70px;
+	margin: 30px auto;
+	background: var(--negro);
+    border-radius: 0 0 10px 10px;
+	margin-top: 0;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: var(--blanco);
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: var(--turquesa);
+	transition: all .3s;
+}
+/* submenu1 haciendo el desplegable */
+.submenu1{
+	position: absolute;
+	background: var(--gris);
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu1 li a{
+	display: block;
+	padding: 15px;
+	color: var(--blanco);
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu1{
+	visibility: visible;
+	opacity: 1;
+}
+
+.buscador {
+	width: 200px;
+	padding: 8px;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.boton1 {
+    align-items: center;
+    border: none;
+    background: var(--turquesa);
+    padding: 6px;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: var(--blanco);
+    font-size: medium;
+}
+
+.boton1:hover {
+    
+    cursor: pointer;
+    font-weight: bold;
+}
+/* ---------------------------------- */
+/* PRODUCTOS/DETALLE  */
+/* ---------------------------------- */
+main > .detalle{
+    width: 80%;
+    margin: auto;
+}
+.detalle{
+    display: inline-flex;
+    width: 80%;
+    flex-direction: row;
+}
+
+.detalle .imagen img{
+    width: 100%;
+}
+.detalle .imagen{
+    width: 50%;
+}
+.detalle .informacion{
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+}
+.detalle .nombre{
+    font-size:x-large;
+    font-weight: 550;
+}
+.detalle .compra{
+    width: 25%;
+}
+#detalles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estrella{
+    font-size:x-large;
+    color: var(--turquesa);
+    margin-bottom: 15px;
+}
+.informacion .precio{
+    font-size: xx-large;
+    color: var(--negro);
+    background-color: var(--blanco);
+    padding: 0px;
+    border-radius: 0px; 
+}
+.informacion .precioAnterior{
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.oferta{
+    color: var(--verde);
+    font-size: 20px;
+}
+.cuotas{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.carrito{
+    margin-top: 5%;
+    margin-right: 25%;
+    padding: 6px;
+    background-color: var(--turquesa);
+    border-radius: 15px;
+    display:flex;
+    justify-content: space-around;
+    font-weight: 550;
+    font-size: 16px;
+    color: var(--blanco);
+
+}
+.carrito:hover{
+    background-color: #0d84af;
+    cursor: pointer;
+}
+.lista{
+    list-style: none;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.subLista{
+    display: flex;
+    justify-content: space-between;
+}
+.subNombre{
+    font-weight:bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------- */
+/* -----------------FOOTER--------------- */
+/* -------------------------------------- */
+
+footer .footer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer {
+    width: 85%;
+    color: var(--blanco);
+    padding: 10px 0px 10px 0px;
+    background-color: var(--negro);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+}
+
+.footerColumnas {
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    margin-top: 10px;  
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    padding-bottom: 13px;
+}
+
+.redes {
+    flex-direction: column;
+}
+
+.redes a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: self-start;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+.redes a :hover {
+    fill: var(--turquesa);
+    cursor: pointer;
+}
+
+.footerNavegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerNavbar li  {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footerNavbar a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footerNavbar a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.logoMarca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+.mediosPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mediosPago a :hover {
+    fill: var(--turquesa);
+    cursor: pointer;
+}
+
+.footerFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerFila a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.footerFila a:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.direccionBSAS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direccionBSAS p {
+    margin-top: 13px;
+}
+
+/* ----------------------------------------- */
+/* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
+/* ----------------------------------------- */
+
+@media(max-width:767px) {
+
+    /* ------------------- */
+    /* QUERYS DEL NAVBAR */
+    /* ------------------- */
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* continuar con menu sandwich!!!  */
+
+    /* -------------------------------- */
+    /* intento de responsive en MAIN - CARDS */
+    /* -------------------------------- */
+
+    .container {
+        grid-template-columns: auto;
+    }
+
+    /* -------------------------------- */
+    /* intento de responsive en FOOTER */
+    /* -------------------------------- */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .footerColumnas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        
+    }
+
+    .logoMarca, .redes, .footerNavegacion, .mediosPago {
+        padding-bottom: 45px;
+        flex-basis: auto;
+    }
+
+    .footerFila {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    footer {
+        display: flex;
+        height: 90%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    
+}
+
+/* CARRUSEL IMAGENES DETALLE PRODUCTO*/
+
+.slide {
+    max-width: 617px;
+    max-height: 480px;
+    width: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* height: calc( 300px + 3em); */
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 480px;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}

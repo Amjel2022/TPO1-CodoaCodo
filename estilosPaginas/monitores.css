@@ -5,6 +5,7 @@
 }
 /* PALETA DE COLORES */
 :root {
+    --verde: rgb(41, 191, 41);
     --turquesa: #11Ace2;
 	--celeste: #46d0f4;
 	--negro: #131313;
@@ -160,6 +161,15 @@
     max-width: max-content;
     padding: 0 0.2em;
     border-radius: 3px;
+}
+.linkProducto{
+    text-decoration: none;
+}
+.envio{
+    color: #131313;
+}
+.descripcion{
+    color: #131313;
 }
 /* -------------------------------------- */
 /* -----------------FOOTER--------------- */
