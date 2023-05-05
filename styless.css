@@ -82,6 +82,10 @@ h1 {
 	transition: all .3s;
 }
 /* submenu1 haciendo el desplegable */
+#mi-menu-desplegable {
+    position: relative;
+    z-index: 1000;
+  }
 .submenu1{
 	position: absolute;
 	background: var(--gris);
