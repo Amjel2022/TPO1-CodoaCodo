@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="../estilosPaginas/contacto.css">
+    <!-- Link de JS -->
+    <script src="../Javas/form.js"></script>
 </head>
 <body>
-    <h1>Estas en Contacto</h1>
+    
+<!-- INICIO DE FORMULARIO DE ENVÍO -->
+    <section class="contact">
+        <div class="contactForm">
+            <form id="form" action="" class="form">
+                <h2>Contactanos</h2>
+                <!-- Nombre -->
+                <label for="nombre">Nombre <span>*</span></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                
+                <!-- email -->
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                
+                <!-- Asunto -->
+                <label for="asunto">Asunto <span>*</span></label>
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+                
+                <!-- Area de texto -->
+                <label for="mensaje">Mensaje <span>*</span></label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" required maxlength="300"></textarea>
+                
+                <!-- Dirección de mail -->
+                <a href="mailto:amjel105@gmail.com" id="miMail"><input type="submit" value="Enviar Mensaje" id="submit"></a>
+
+            </form>
+            
+            
+
+        </div>
+    </section>
+
 </body>
 </html>
+
+<!-- u-wrapper == ovbio el div
+    contact-content == contactForm
+    btn primary full == btnEnviar
+    trucazo == miMail (ID)
+
+-->
