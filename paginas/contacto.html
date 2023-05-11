@@ -8,10 +8,10 @@
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../estilosPaginas/contacto.css">
     <!-- Link de JS -->
-    <script src="../Javas/form.js"></script>
+    <script src="../Javas/contacto.js"></script>
 </head>
 <body>
-    
+    <script src="../Javas/contacto.js"></script>
 <!-- INICIO DE FORMULARIO DE ENVÍO -->
     <section class="contact">
         <div class="contactForm">
@@ -33,11 +33,17 @@
                 <label for="mensaje">Mensaje <span>*</span></label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" required maxlength="300"></textarea>
                 
-                <!-- Dirección de mail -->
-                <a href="mailto:amjel105@gmail.com" id="miMail"><input type="submit" value="Enviar Mensaje" id="submit"></a>
+                <!-- botón enviar -->
+                <input type="submit" value="Enviar" id="submit">
 
             </form>
             
+            <!-- equivalencias del código 
+            email = email
+            subject = asunto
+            submit = submit
+
+            -->
             
 
         </div>
@@ -46,9 +52,3 @@
 </body>
 </html>
 
-<!-- u-wrapper == ovbio el div
-    contact-content == contactForm
-    btn primary full == btnEnviar
-    trucazo == miMail (ID)
-
--->
