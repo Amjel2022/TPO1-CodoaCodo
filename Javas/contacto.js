@@ -1,4 +1,4 @@
-//variables que haven enfasis en etiquetas HTML se les coloca "$"
+//variables que hacen enfasis en etiquetas HTML se les coloca "$"
 
 const   $submit = document.getElementById('submit'),
         $nombre = document.getElementById('nombre'),
@@ -31,19 +31,19 @@ function validateInputs () {
         //validación nombre:
         if(!nombreRegex.test($nombre.value)) {
                 alert("Ingrese el formato correcto en el nombre.");
-                $nombre.style.border = "1px solid red";     
+                $nombre.style.border = "2px solid red";     
         }
         
         //validación email:
         if(!emailRegex.test($email.value)) {
                 alert("Ingrese el formato correcto en el email.");
-                $email.style.border = "1px solid red";  
+                $email.style.border = "2px solid red";  
         }
 
         //validación asunto:
         if(!asuntoRegex.test($asunto.value)) {
                 alert("Ingrese el formato correcto en el asunto.");
-                $asunto.style.border = "1px solid red";       
+                $asunto.style.border = "2px solid red";       
         }
 }
 // Evento !!
