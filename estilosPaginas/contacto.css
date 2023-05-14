@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-    box-sizing: border-box;
-}
-
 /* PALETA DE COLORES */
 :root {
     --turquesa: #04587c;
@@ -19,125 +13,7 @@
 	--gris: #333333;
     
 } 
-/* BODY: IMAGEN DE FONDO DE LA PÁGINA */
 
-/* ---------------------------------- */
-/* ENCABEZADO Y MENU DE NAVEGACION  */
-/* ---------------------------------- */
-
-header{
-	width: 100%;
-}
-
-h1 {
-    color: var(--gris);
-    font-variant: small-caps;
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.encabezado {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
-	background-image: linear-gradient(0, #ffffff 0, #ffffff 25%, #edeaf1 50%, #c8cac2 75%, #a9ad98 100%);
-    width: 85%;
-    margin: 20px auto 0 auto;
-}
-
-.img1 {
-    width: 100px;
-	padding: 0 10px 0 10px;
-}
-
-.navegacion{
-	display: flex;
-    justify-content: space-evenly;
-	align-items: center;
-    width: 85%;
-	height: 70px;
-	margin: 30px auto;
-	background: var(--negro);
-    border-radius: 0 0 10px 10px;
-	margin-top: 0;
-}
-
-.navegacion ul{
-	list-style: none;
-}
-
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: var(--blanco);
-	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	color: var(--turquesa);
-	transition: all .3s;
-}
-/* submenu1 haciendo el desplegable */
-#mi-menu-desplegable {
-    position: relative;
-    z-index: 1000;
-  }
-.submenu1{
-	position: absolute;
-	background: var(--gris);
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-
-.submenu1 li a{
-	display: block;
-	padding: 15px;
-	color: var(--blanco);
-	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
-}
-
-.menu li:hover .submenu1{
-	visibility: visible;
-	opacity: 1;
-}
-
-.buscador {
-	width: 200px;
-	padding: 8px;
-    margin-left: 35px;
-    align-items: center;
-}
-
-.boton1 {
-    align-items: center;
-    border: none;
-    background: var(--celeste);
-    padding: 7px 15px;
-    margin-left: 15px;
-    border-radius: 5px;
-    color: var(--negro);
-    font-size: medium;
-    font-weight: bold;
-    font-variant: small-caps;
-}
-
-.boton1:hover {
-    background: var(--turquesa);
-    color: var(--blanco);
-    cursor: pointer;
-    font-weight: bold;
-}
 
 /*  ------------------------------------------  */
 /* ESTILOS DEL FORMULARIO */
@@ -153,7 +29,6 @@ body {
 
 .contact {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 20px 0 50px 0;
     border: 3px solid black;
@@ -163,12 +38,12 @@ body {
 
 .contactForm {
     width: 100%;
-    height: 610px;
+    height: 635px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
-    box-shadow: 3px 10px 105px 3px rgb(59, 35, 35);
+    box-shadow: 3px 10px 105px 3px rgb(25, 37, 52);
 }
 
 .form {
@@ -193,6 +68,14 @@ h2 {
     font-weight: bolder;
     font-variant: small-caps;
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--celeste);
+}
+
+.btnEnviar:hover {
+    background: var(--turquesa);
+    color: var(--blanco);
+    cursor: pointer;
+    font-weight: bold;
 }
 
 input {
@@ -209,145 +92,15 @@ textarea {
 
 label {
     display: flex;
-    
-}
-
-/* ------------------------------------- */
-/* ------------- FOOTER ----------------  */
-/* ------------------------------------- */
-
-footer .footer {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    margin: auto;
-}
-
-.footer {
-    width: 85%;
-    color: var(--blanco);
-    padding: 10px 0px 10px 0px;
-    background-color: var(--negro);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 0 auto 20px auto;
-}
-
-.footerColumnas {
-    display: flex;
-    flex-direction: row;
-    min-height: 250px;
-    justify-content: space-around;
-    align-content: stretch;
-    align-items: stretch;
-    margin-top: 10px;  
-}
-
-h4 {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-    padding-bottom: 13px;
-}
-
-.redes {
-    flex-direction: column;
-}
-
-.redes a {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    align-items: self-start;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    color: var(--blanco);
-}
-
-.redes a :hover {
-    fill: var(--turquesa);
-    cursor: pointer;
-}
-
-.footerNavegacion {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerNavbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.footerNavbar li  {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-
-.footerNavbar a {
-    text-decoration: none;
-    color: var(--blanco);
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.footerNavbar a:hover {
-    color: var(--turquesa);
-    cursor: pointer;
-}
-
-.logoMarca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: auto;
-}
-
-.mediosPago {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mediosPago a :hover {
-    fill: var(--turquesa);
-    cursor: pointer;
-}
-
-.footerFila {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: smaller;
+    margin-left: -160px;
+    font-size: 15px;
+    font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.footerFila a {
-    color: var(--blanco);
-    text-decoration: none;
+span {
+    color: red;
+    margin-left: 3px;
+    font-size: 20px;
 }
 
-.footerFila a:hover {
-    color: var(--turquesa);
-    cursor: pointer;
-}
-
-.direccionBSAS {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.direccionBSAS p {
-    margin-top: 13px;
-}
