@@ -127,6 +127,7 @@ header{
 main > .detalle{
     width: 80%;
     margin: auto;
+    padding-bottom: 30px;
 }
 .detalle{
     display: inline-flex;
