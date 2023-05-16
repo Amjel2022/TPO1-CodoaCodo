@@ -26,26 +26,11 @@ buttons.forEach((button) => {
 
 updateCarousel();
 
-// Menu desplegable
-// var menuDesplegable = document.getElementById("mi-menu-desplegable");
-
-// menuDesplegable.addEventListener("click", function(event) {
-//   event.stopPropagation();
-// });
-
-// menuDesplegable.addEventListener("touchstart", function(event) {
-//   event.stopPropagation();
-// });
-
-//PAG MONITORES MENU HAMBURGUESA
-let menu = document.querySelector('#menu-btn')
-let navbar = document.querySelector('header .navegacion')
-
-menu.onclick = () =>{
-     menu.classList.toggle('fa-times');
-     navbar.classList.toggle('active');
- };
- window.onscroll = () =>{
-     menu.classList.remove('fa-times');
-     navbar.classList.remove('active');
- };
+document.getElementById('toggle').addEventListener('change', function() {
+  var menu = document.getElementsByClassName('navegacion')[0];
+  if (this.checked) {
+    menu.classList.add('open');
+  } else {
+    menu.classList.remove('open');
+  }
+});

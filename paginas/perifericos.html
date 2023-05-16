@@ -22,7 +22,10 @@
             <h1>CompuTodo<></h1>
         </div>
         <!-- menu hamburguesa -->
-        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="hamburger">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">&#9776;</label>
+          </div>
         <nav class="navegacion">
             <!-- Menú principal -->
             <ul class="menu">
@@ -53,12 +56,13 @@
                 <li> <a href="./contacto.html">Contacto</a> </li>
                 <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
                 <!-- Revisar el menu para ver si se agrega algo -->
-               
-                <!-- Botón para buscar y buscador  -->
-                <input class="buscador" type="text" placeholder="¿Qué deseas buscar?">
-                <input type="submit" value="Buscar">
-                
             </ul>
+             <!-- Botón para buscar y buscador  -->
+             <div class="contenedor-buscador">
+                <input class="buscador" type="text" placeholder="Buscar">
+                <input class="boton1" type="submit" value="Buscar">
+
+             </div>
         </nav>
     </header>
     <main id="productos">
@@ -213,7 +217,7 @@
         
     </footer>
     <!-- link js -->
-    <script src="../slider.js"></script>  
+    <script src="../Javas/slider.js"></script>  
 
 </body>
 </html>

@@ -7,6 +7,7 @@
         <title>CompuTodo</title>
         <!-- Link del CSS -->
         <link rel="stylesheet" href="styless.css">
+        <link rel="stylesheet" href="./estilosPaginas/productos.css">
         <!-- Codigo de la Fuente: Oswalt -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +29,11 @@
             <div class="encabezado">
                 <a href="index.html" > <img src="./imagenes/logo1.jpg" alt="logo de la tienda" class="img1"> </a>
                 <h1>CompuTodo < > </h1>
+            </div>
+            <!-- menu hamburguesa -->
+            <div class="hamburger">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">&#9776;</label>
             </div>
             
             <nav class="navegacion">
@@ -60,12 +66,14 @@
                     <li> <a href="./paginas/contacto.html">Contacto</a> </li>
                     <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
                     <!-- Revisar el menu para ver si se agrega algo -->
-                
-                    <!-- Botón para buscar y buscador  -->
-                    <input class="buscador" type="text" placeholder="¿Qué deseas buscar?">
-                    <input class="boton1" type="submit" value="Buscar">
                     
                 </ul>
+                <!-- Botón para buscar y buscador  -->
+                <div class="contenedor-buscador">
+                    <input class="buscador" type="text" placeholder="Buscar">
+                    <input class="boton1" type="submit" value="Buscar">
+
+                </div>
             </nav>
         </header>
         <!-- -------------------------------- -->
@@ -253,6 +261,7 @@
             </div>
             
         </footer>
+
 
     </body>
 </html>
