@@ -20,6 +20,15 @@ body {
 /* ---------------------------------- */
 /* ENCABEZADO Y MENU DE NAVEGACION  */
 /* ---------------------------------- */
+
+h1 {
+    color: var(--gris);
+    font-variant: small-caps;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .encabezado {
     display: flex;
     justify-content: flex-start;
