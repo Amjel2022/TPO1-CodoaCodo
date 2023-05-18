@@ -514,12 +514,16 @@ h4 {
         position: relative;
       }
     .encabezado h1{
+        display: flex;
         background-color: var(--blanco);
-        width: 90%;
-        height: 48px;
+        width: 95%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top: 0;
-        right: 0;
+        margin: 5px ;
+        border-radius: 8px;
+        border: 5px solid var(--turquesa);
     }
     .encabezado a{
         display: none;
@@ -533,15 +537,16 @@ h4 {
       }
     
       .hamburger label {
-        width: 10%;
-        height: 48px;
+        display: flex;
+        width: 15%;
+        height: px;
         position: absolute;
-        top: 0;
-        left:0;
+        align-items: center;
+        justify-content: center;
         color:var(--negro);
-        background-color: var(--blanco);
         font-size: 24px;
         cursor: pointer;
+        margin: -4px 0px 0px 30px;
       }
       .navegacion.open {
         display: block;
@@ -582,6 +587,8 @@ h4 {
       #detalles{
         margin-top: 50px;
       }
+
+    
       /* -------------------------------- */
     /* intento de responsive en FOOTER */
     /* -------------------------------- */
