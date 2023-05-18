@@ -354,7 +354,7 @@ h4 {
         margin-top: 10px; 
       }
   }
-  @media (max-width: 760px){
+  @media (max-width: 760px) {
     .header {
         position: relative;
       }
@@ -436,7 +436,7 @@ h4 {
       img {
         margin-top: 80px;
       }
-
+    
 
       /* -------------------------------- */
     /* intento de responsive en FOOTER */
