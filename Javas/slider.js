@@ -26,6 +26,8 @@ buttons.forEach((button) => {
 
 updateCarousel();
 
+// Menu hamburguesa
+
 document.getElementById('toggle').addEventListener('change', function() {
   var menu = document.getElementsByClassName('navegacion')[0];
   if (this.checked) {
