@@ -368,7 +368,7 @@ h4 {
         position: absolute;
         margin: 5px ;
         border-radius: 8px;
-        border: 5px solid var(--turquesa);
+        border: 3px solid var(--turquesa);
     }
     .encabezado a{
         display: none;
@@ -433,9 +433,9 @@ h4 {
         margin-top: 50px;
       }
 
-      img {
-        margin-top: 80px;
-      }
+    main {
+        margin-top: 55px;
+    }
     
 
       /* -------------------------------- */

@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     margin: 20px 0 50px 0;
-    border: 3px solid black;
+    
     border-radius: 15px;
     position: static;
 }
@@ -42,6 +42,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 3px solid black;
     border-radius: 15px;
     box-shadow: 3px 10px 105px 3px rgb(25, 37, 52);
 }
@@ -104,14 +105,127 @@ span {
     font-size: 20px;
 }
 
+
 /* ----------------------------------------- */
 /* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
+/* menu hamburguesa */
+@media (max-width: 1000px) {
+    .navegacion {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+      }
+      
+      .navegacion ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .navegacion ul li {
+        margin-right: 10px; 
+      }
+      
+      .input {
+        margin-top: 10px; 
+      }
+      
+  }
+  @media (max-width: 760px) {
+    .header {
+        position: absolute;
+      }
+    .encabezado h1{
+        display: flex;
+        background-color: var(--blanco);
+        width: 95%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 5px ;
+        border-radius: 5px;
+        border: 3px solid var(--turquesa);
+    }
+    .encabezado a{
+        display: none;
+    }
+    .navegacion {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+        background-color: var(--blanco);
+      }
+    
+      .hamburger label {
+        display: flex;
+        width: 15%;
+        height: px;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        color:var(--negro);
+        font-size: 24px;
+        cursor: pointer;
+        margin: -4px 0px 0px 30px;
+      }
+      .navegacion.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: var(--blanco);
+        color: var(--negro);
+        z-index: 1;
+      }
+    
+      .navegacion.open {
+        margin: 50px 20px;
+      }
+    
+      .navegacion.open li {
+        margin-bottom: 20px;
+      }
+    
+      .navegacion.open a {
+        color: var(--negro);
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .contenedor-buscador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .buscador{
+        width: 150px;
+      }
+      .buscador, .boton1{
+        margin-bottom: 10px;
+      }
+      #detalles{
+        margin-top: 50px;
+      }
 
-@media(max-width:767px) {
+    main {
+        margin-top: 10px;
+    }
+    
+    .contact {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        
+    }
 
-    /* -------------------------------- */
-    /*  responsive en FOOTER */
+      /* -------------------------------- */
+    /* intento de responsive en FOOTER */
     /* -------------------------------- */
 
     .footer {
@@ -128,13 +242,12 @@ span {
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
-        
+        padding-top: 350px;
     }
 
     .logoMarca, .redes, .footerNavegacion, .mediosPago {
         padding-bottom: 45px;
-        
-        flex-basis: content;
+        flex-basis: auto;
     }
 
     .footerFila {
@@ -155,6 +268,23 @@ span {
         justify-content: center;
         margin: auto;
     }
+  }
+  @media(max-width: 574px) {
+    .footerColumnas {
+        width: 100%;
 
+    }
 }
+  @media (max-width: 420px){
+    .encabezado h1{
+        font-size: 1.5rem;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .buscador{
+        width: 75px;
+      }
 
+  }
