@@ -147,7 +147,7 @@ span {
         justify-content: center;
         position: relative;
         margin: 5px ;
-        border-radius: 5px;
+        border-radius: 8px;
         border: 3px solid var(--turquesa);
         z-index: 1;
     }
@@ -214,19 +214,14 @@ span {
         margin-top: 50px;
       }
 
-    main {
-        margin-top: 10px;
-    }
-    
     .contact {
         display: flex;
-        align-items: center;
-        padding-top: 40px;
-        
+        justify-content: center;
+        align-items: center;  
     }
 
       /* -------------------------------- */
-    /* intento de responsive en FOOTER */
+    /*  responsive en FOOTER */
     /* -------------------------------- */
 
     .footer {
@@ -253,7 +248,7 @@ span {
 
     .footerFila {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 90%;

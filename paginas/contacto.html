@@ -7,6 +7,8 @@
     <title>Contacto</title>
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../estilosPaginas/contacto.css">
+    <link rel="stylesheet" href="../styless.css">
+    <link rel="stylesheet" href="../estilosPaginas/productos.css">
 
     <!-- Icono de Falticon -->
     <link rel="icon" href="../imagenes/ordenador-portatil.png">
@@ -34,6 +36,12 @@
         <h1>CompuTodo < > </h1>
     </div>
     
+    <!-- menu hamburguesa -->
+            <div class="hamburger">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">&#9776;</label>
+            </div>
+
     <nav class="navegacion">
         <!-- Menú principal -->
         <ul class="menu" id="mi-menu-desplegable">
@@ -67,36 +75,37 @@
 </header>
 
 <!-- INICIO DE FORMULARIO DE ENVÍO -->
-    <section class="contact">
-        <div class="contactForm">
-            <form id="form" action="" class="form">
-                <h2>Contactanos</h2>
-                <!-- Nombre -->
-                <label for="nombre">Nombre <span>*</span></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                
-                <!-- email -->
-                <label for="email">E-mail <span>*</span></label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
-                
-                <!-- Asunto -->
-                <label for="asunto">Asunto <span>*</span></label>
-                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
-                
-                <!-- Area de texto -->
-                <label for="mensaje">Mensaje <span>*</span></label>
-                <textarea name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Escriba su mensaje" required maxlength="300"></textarea>
-                
-                <!-- botón enviar -->
-                <input type="submit" value="Enviar" id="submit" class="btnEnviar">
+    <main>
+        <section class="contact">
+            <div class="contactForm">
+                <form id="form" action="" class="form">
+                    <h2>Contactanos</h2>
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre <span>*</span></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    
+                    <!-- email -->
+                    <label for="email">E-mail <span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    
+                    <!-- Asunto -->
+                    <label for="asunto">Asunto <span>*</span></label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+                    
+                    <!-- Area de texto -->
+                    <label for="mensaje">Mensaje <span>*</span></label>
+                    <textarea name="mensaje" id="mensaje" cols="35" rows="10" placeholder="Escriba su mensaje" required maxlength="300"></textarea>
+                    
+                    <!-- botón enviar -->
+                    <input type="submit" value="Enviar" id="submit" class="btnEnviar">
 
-            </form>
-            
-            <!-- Link de JS -->
-            <script src="../Javas/contacto.js"></script> 
-        </div>
-    </section>
-
+                </form>
+                
+                <!-- Link de JS -->
+                <script src="../Javas/contacto.js"></script> 
+            </div>
+        </section>
+    </main>
     <!-- --------------------------- -->
         <!-- FOOTER -->
         
