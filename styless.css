@@ -459,30 +459,6 @@ h4 {
 /* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
 
-@media(max-width:767px) {
-
-    /* ------------------- */
-    /* QUERYS DEL NAVBAR */
-    /* ------------------- */
-
-    .navegacion {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* -------------------------------- */
-    /* responsive en MAIN - CARDS */
-    /* -------------------------------- */
-
-    .container {
-        grid-template-columns: auto;
-    }
-}
 /* menu hamburguesa */
 @media (max-width: 1000px) {
     .navegacion {
@@ -502,6 +478,19 @@ h4 {
   }
   
   @media (max-width: 760px){
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        grid-template-columns: auto;
+    }
+
     .header {
         position: relative;
       }
@@ -523,6 +512,8 @@ h4 {
     .navegacion {
         display: none;
       }
+      
+      /* ----------MENU HAMBURGUESA---------- */
       .hamburger {
         display: block;
         background-color: var(--blanco);
@@ -597,7 +588,24 @@ h4 {
       main {
         margin-top: 35px;
       }
-      
+
+      /* ----------SLIDER------------- */
+
+      .sliderContainer {
+        width: 80%;
+        height: 200px;
+      }
+
+      .sliderImg {
+        width: 60%;
+        height: fill;
+        position: absolute;
+        transition: transform 550ms ease-in-out;
+        z-index: -1;
+        margin: 10px;
+      }
+
+
       /* -------------------------------- */
     /*  responsive en FOOTER */
     /* -------------------------------- */
