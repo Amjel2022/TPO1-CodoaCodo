@@ -536,7 +536,7 @@ h4 {
         top: 0;
         right: 0;
         width: 50%;
-        height: 60%;
+        height: 50%;
     }
 }
 @media (max-width: 420px){
@@ -559,6 +559,6 @@ h4 {
         top: 0;
         right: 0;
         width: 50%;
-        height: 60%;
+        height: 50%;
     }
   }
