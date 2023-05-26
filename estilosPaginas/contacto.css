@@ -243,7 +243,7 @@ span {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: fit-content;
+        height: 1500px;
     }
 
     .footerColumnas {
@@ -257,13 +257,8 @@ span {
         padding-top: 350px;
     }
 
-    .logoMarca, .redes, .footerNavegacion, .mediosPago {
-        padding-bottom: 45px;
-        flex-basis: auto;
-    }
-
     .logoMarca {
-      padding-top: 460px;
+      padding-top: 500px;
     }
     .footerFila {
         display: flex;
@@ -279,11 +274,11 @@ span {
     footer {
         display: flex;
         height: 90%;
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: auto;
+        
     }
   }
   @media(max-width: 574px) {
