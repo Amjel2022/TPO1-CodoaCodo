@@ -8,13 +8,14 @@
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../estilosPaginas/contacto.css">
     <link rel="stylesheet" href="../styless.css">
-    <link rel="stylesheet" href="../estilosPaginas/productos.css">
+    <!-- <link rel="stylesheet" href="../estilosPaginas/productos.css"> -->
 
     <!-- Icono de Falticon -->
     <link rel="icon" href="../imagenes/ordenador-portatil.png">
     
     <!-- Estilos NavBar y Footer -->
     <link rel="stylesheet" href="../styless.css">
+    <link rel="stylesheet" href="../estilosPaginas/productos.css">
     
     <!-- Codigo de la Fuente: Oswalt -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">   
 
+    <!-- Icono de Whats app -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
 
@@ -60,17 +64,19 @@
                 </ul>
             </li>
             <!-- Fin menú desplegable -->
-            <li> <a href="../paginas/ofertas.html">Ofertas</a> </li>
-            <li> <a href="../paginas/contacto.html">Contacto</a> </li>
+            <li> <a href="./ofertas.html">Ofertas</a> </li>
+            <li> <a href="./contacto.html">Contacto</a> </li>
             <li> <a href="./dondeEstamos.html">Donde estamos</a> </li>
             <!-- En la opcion de contacto que tire la pagina al formulario para validar con JS (pedido en el TPO) -->
             <!-- Revisar el menu para ver si se agrega algo -->
-        
-            <!-- Botón para buscar y buscador  -->
-            <input class="buscador" type="text" placeholder="¿Qué deseas buscar?">
-            <input class="boton1" type="submit" value="Buscar">
-            
         </ul>
+        
+        <!-- Botón para buscar y buscador  -->
+        <div class="contenedor-buscador">
+            <input class="buscador" type="text" placeholder="Buscar">
+            <input class="boton1" type="submit" value="Buscar">
+
+        </div>
     </nav>
 </header>
 
@@ -105,6 +111,14 @@
                 <script src="../Javas/contacto.js"></script> 
             </div>
         </section>
+
+        <!-- Icono de whats app -->
+        <div class="icono-wsp">
+            <a href="https://api.whatsapp.com/send/?phone=5491123249568&text=Hola%20buen%20día,%20quería%20consultar%20por%20el%20siguiente%20producto:" class="btn-wsp" target="_blank">
+                <i class="fa fa-whatsapp icono"></i>
+            </a>
+        </div>
+
     </main>
     <!-- --------------------------- -->
         <!-- FOOTER -->
@@ -160,10 +174,3 @@
 
 </body>
 </html>
-
-<!-- equivalencias del código 
-            email = email
-            subject = asunto
-            submit = submit
-
-            -->

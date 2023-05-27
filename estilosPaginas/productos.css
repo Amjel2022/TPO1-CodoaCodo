@@ -327,6 +327,29 @@ h4 {
     margin-top: 13px;
 }
 
+/* ------------ Boton de WSP --------- */
+/* ----------------------------------- */
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
 /* ----------------------------------------- */
 /* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
@@ -384,7 +407,7 @@ h4 {
         color:var(--negro);
         font-size: 24px;
         cursor: pointer;
-        margin: -6px 0px 0px 30px;
+        margin: -4px 0px 0px 30px;
       }
       .navegacion.open {
         display: block;
@@ -392,7 +415,7 @@ h4 {
         top: 0;
         right: 0;
         width: 50%;
-        height: 50%;
+        height: 60%;
         background-color: var(--blanco);
         color: var(--negro);
         z-index: 2;
@@ -436,12 +459,11 @@ h4 {
       }
 
        .navegacion ul {
-        width: 90%;
         height: min-content;
        } 
 
       main {
-        margin-top: 35px;
+        margin-top: 55px;
       }
     
 
@@ -493,7 +515,28 @@ h4 {
   @media(max-width: 574px) {
     .footerColumnas {
         width: 100%;
+    }
 
+    .encabezado h1{
+        font-size: 1.5rem;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .buscador{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navegacion.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 60%;
     }
 }
 @media (max-width: 420px){
@@ -510,4 +553,12 @@ h4 {
         justify-content: center;
       }
 
+      .navegacion.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+    }
   }

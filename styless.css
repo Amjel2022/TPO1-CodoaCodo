@@ -6,8 +6,8 @@
 
 /* PALETA DE COLORES */
 :root {
-    --turquesa: #04587c;
-	--celeste: rgb(161, 185, 230);
+    --turquesa: #11Ace2;
+	--celeste: #46d0f4;
 	--negro: #131313;
 	--blanco: #fefefe;	
 	--gris: #333333;
@@ -315,6 +315,8 @@ main {
     color: var(--blanco);
 }
 
+
+
 /* ------------------------------------- */
 /* ------------ FOOTER ----------------- */ 
 /* ------------------------------------- */
@@ -478,6 +480,19 @@ h4 {
     background: #20ba5a;
 }
 
+.webPreparacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 3px solid var(--negro);
+}
+
+.webPreparacion img {
+    border-radius: 10px;
+}
+
 /* ----------------------------------------- */
 /* QUERYS (MÍNIMO TRES TAMAÑOS DISTINTOS)  */
 /* ----------------------------------------- */
@@ -556,6 +571,12 @@ h4 {
         display: none;
       }
       
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+
       /* ----------MENU HAMBURGUESA---------- */
       .hamburger {
         display: block;
@@ -643,12 +664,21 @@ h4 {
       .sliderImg {
         width: 60%;
         height: fill;
+        justify-content: center;
         position: absolute;
         transition: transform 550ms ease-in-out;
         z-index: -1;
         margin: 10px;
       }
 
+      .webPreparacion {
+        width: 90%;
+        height: 90%;
+      }
+      .webPreparacion img {
+        width: 90%;
+        height: 90%;
+      }
 
     /* -------------------------------- */
     /* ------- responsive en FOOTER ----*/
